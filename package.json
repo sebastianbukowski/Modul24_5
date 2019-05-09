@@ -1,0 +1,16 @@
+{
+  "name": "Modul24_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculateDistancePoints.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testmocha:watch": "mocha -w -b *.test.js  "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}
