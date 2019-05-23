@@ -5,10 +5,11 @@ const calculateStylePoints = (styleNotes) => {
 
 //  Dla nas istotne jest, że obie te wartości to dwie liczby, które mogą być dodatnie lub ujemne.
      
-    const max = Math.max(styleNotes[0], styleNotes[1], styleNotes[2], styleNotes[3], styleNotes[4]);
-    const min = Math.min(styleNotes[0], styleNotes[1], styleNotes[2], styleNotes[3], styleNotes[4]);
-      return styleNotes[0] + styleNotes[1] + styleNotes[2] + styleNotes[3] + styleNotes[4] - max - min;
+//     const max = Math.max(styleNotes[0], styleNotes[1], styleNotes[2], styleNotes[3], styleNotes[4]);
+//     const min = Math.min(styleNotes[0], styleNotes[1], styleNotes[2], styleNotes[3], styleNotes[4]);
+//       return styleNotes[0] + styleNotes[1] + styleNotes[2] + styleNotes[3] + styleNotes[4] - max - min;
 
+// }
+      return styleNotes.sort().slice(1,4).reduce((a,b)  => a + b)
 }
-  
   module.exports = calculateStylePoints;
