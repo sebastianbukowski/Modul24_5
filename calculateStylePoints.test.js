@@ -26,4 +26,13 @@ describe('calculateStylePoints', () => {
 
 		assert.equal(actual, expected);
 	});
+
+
+	it('sorded style notes', () => {
+		const actual = calculateStylePoints([18.5, 19.5, 18.5, 19.0, 18.5]);
+
+		const expected = 56;
+
+		assert.equal(actual, expected);
+	});
 });
